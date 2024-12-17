@@ -64,7 +64,6 @@ def simulate_nuisance_and_easy_treatment(
         n (int, optional): number of observations
         p (int optional): number of covariates (>=5)
         sigma (float): standard deviation of the error term
-        adj (float): adjustment term for the distribution of propensity, e. Higher values shift the distribution to 0.
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
@@ -105,7 +104,6 @@ def simulate_randomized_trial(n=1000, p=5, sigma=1.0):
         n (int, optional): number of observations
         p (int optional): number of covariates (>=5)
         sigma (float): standard deviation of the error term
-        adj (float): no effect. added for consistency
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
@@ -139,7 +137,6 @@ def simulate_easy_propensity_difficult_baseline(n=1000, p=5, sigma=1.0):
         n (int, optional): number of observations
         p (int optional): number of covariates (>=3)
         sigma (float): standard deviation of the error term
-        adj (float): no effect. added for consistency
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
@@ -177,7 +174,6 @@ def simulate_unrelated_treatment_control(n=1000, p=5, sigma=1.0):
         n (int, optional): number of observations
         p (int optional): number of covariates (>=3)
         sigma (float): standard deviation of the error term
-        adj (float): adjustment term for the distribution of propensity, e. Higher values shift the distribution to 0.
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
@@ -256,7 +252,6 @@ def simulate_easy_propensity_easy_baseline(
         n (int, optional): number of observations
         p (int optional): number of covariates (>=5)
         sigma (float): standard deviation of the error term
-        adj (float): adjustment term for the distribution of propensity, e. Higher values shift the distribution to 0.
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
@@ -293,7 +288,6 @@ def simulate_difficult_propensity_difficult_baseline(
         n (int, optional): number of observations
         p (int optional): number of covariates (>=5)
         sigma (float): standard deviation of the error term
-        adj (float): adjustment term for the distribution of propensity, e. Higher values shift the distribution to 0.
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
@@ -335,7 +329,6 @@ def simulate_extreme_propensity_difficult_baseline(
         n (int, optional): number of observations
         p (int optional): number of covariates (>=5)
         sigma (float): standard deviation of the error term
-        adj (float): adjustment term for the distribution of propensity, e. Higher values shift the distribution to 0.
     Returns:
         (tuple): Synthetically generated samples with the following outputs:
             - y ((n,)-array): outcome variable.
